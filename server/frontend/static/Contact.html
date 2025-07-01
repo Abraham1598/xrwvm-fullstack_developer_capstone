@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contáctanos | Best Cars</title>
+  <!-- Hojas de estilo -->
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #e0f7fa 0%, #f8fdff 100%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .card-contact {
+      margin: 40px auto;
+      max-width: 600px;
+      padding: 2.5rem 2rem;
+      border-radius: 18px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+      background: #fff;
+    }
+    .contact-title {
+      color: #00796b;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 0.8rem;
+    }
+    .contact-info {
+      font-size: 1.15rem;
+      color: #444;
+    }
+    .contact-label {
+      font-weight: 600;
+      color: #0097a7;
+    }
+    .contact-icon {
+      width: 36px;
+      vertical-align: middle;
+      margin-right: 12px;
+      opacity: 0.88;
+    }
+    .navbar {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .social-icons a {
+      margin-right: 10px;
+      color: #0097a7;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .social-icons a:hover {
+      color: #00796b;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1de9b6; height: 1in;">
+    <div class="container-fluid">
+      <h2 class="mb-0" style="color: #004d40; padding-right: 5%;">Best Cars</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/contact">Contáctanos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="card card-contact">
+    <div class="text-center">
+      <h1 class="contact-title">Contáctanos</h1>
+      <p class="contact-info">
+        ¿Tienes alguna pregunta o quieres agendar una cita? ¡Estamos aquí para ayudarte! <br>
+        Puedes comunicarte a través de los siguientes medios:
+      </p>
+    </div>
+    <hr>
+    <p class="contact-info">
+      <span class="contact-label">Dirección:</span>
+      <img src="/static/location_icon.svg" class="contact-icon" alt="Ubicación">
+      Av. Reforma 1234, Col. Centro, CDMX, México
+    </p>
+    <p class="contact-info">
+      <span class="contact-label">Teléfono:</span>
+      <img src="/static/phone_icon.svg" class="contact-icon" alt="Teléfono">
+      <a href="tel:+525555551234" style="color:#00796b; text-decoration:underline;">+52 55 5555 1234</a>
+    </p>
+    <p class="contact-info">
+      <span class="contact-label">Correo:</span>
+      <img src="/static/email_icon.svg" class="contact-icon" alt="Correo">
+      <a href="mailto:contacto@bestcars.com" style="color:#00796b; text-decoration:underline;">contacto@bestcars.com</a>
+    </p>
+    <p class="contact-info">
+      <span class="contact-label">Horario de atención:</span>
+      Lunes a Viernes: 9:00am - 7:00pm <br>
+      Sábados: 10:00am - 3:00pm
+    </p>
+    <div class="social-icons mt-4 text-center">
+      <span class="contact-label">Síguenos:</span>
+      <a href="https://facebook.com/bestcars" title="Facebook" target="_blank"><img src="/static/facebook_icon.svg" class="contact-icon" style="width:28px;" alt="Facebook"></a>
+      <a href="https://instagram.com/bestcars" title="Instagram" target="_blank"><img src="/static/instagram_icon.svg" class="contact-icon" style="width:28px;" alt="Instagram"></a>
+      <a href="https://twitter.com/bestcars" title="Twitter" target="_blank"><img src="/static/twitter_icon.svg" class="contact-icon" style="width:28px;" alt="Twitter"></a>
+    </div>
+  </div>
+</body>
+</html>

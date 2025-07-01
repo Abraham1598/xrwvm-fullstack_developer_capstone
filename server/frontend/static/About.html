@@ -1,68 +1,135 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <!-- Link the style sheet here -->
+  <meta charset="UTF-8">
+  <title>Sobre Nosotros | Best Cars</title>
+  <!-- Bootstrap y estilos personalizados -->
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .navbar {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .card-profile {
+      margin: 30px 15px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+      border-radius: 20px;
+      transition: transform 0.2s;
+    }
+    .card-profile:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+    }
+    .card-img-top {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      object-fit: cover;
+      height: 300px;
+    }
+    .banner {
+      text-align: center;
+      padding: 2rem 0 1rem 0;
+    }
+    .banner h1 {
+      font-weight: bold;
+      color: #00796b;
+      margin-bottom: 12px;
+    }
+    .about-description {
+      color: #333;
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
+    }
+    .row-profiles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .card-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #0097a7;
+    }
+    .card-subtitle {
+      color: #555;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    .card-text {
+      color: #444;
+      margin: 12px 0;
+    }
+    .email-link {
+      color: #00796b;
+      text-decoration: underline;
+    }
+  </style>
 </head>
-<div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1de9b6; height: 1in;">
     <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <h2 class="mb-0" style="color: #004d40; padding-right: 5%;">Best Cars</h2>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
+            <a class="nav-link active" style="font-size: larger;" href="/about">Sobre Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
+            <a class="nav-link" style="font-size: larger;" href="/contact">Contacto</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
+  <div class="container" style="max-width: 1100px;">
+    <div class="banner" name="about-header">
+      <h1>Sobre Nosotros</h1>
+      <div class="about-description">
+        Bienvenido a <strong>Best Cars</strong>, tu concesionario de confianza con más de 15 años de experiencia en la industria automotriz. Nos especializamos en la venta de autos nacionales e importados, ofreciendo siempre los mejores precios y un servicio personalizado. Nuestro objetivo es ayudarte a encontrar el auto perfecto para ti y tu familia, asegurando calidad, transparencia y satisfacción total.
       </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+    </div>
+    <div class="row-profiles">
+      <div class="card card-profile" style="width: 300px;">
+        <img class="card-img-top" src="/static/real_person1.jpg" alt="Foto de Laura Ramírez">
+        <div class="card-body text-center">
+          <p class="card-title">Laura Ramírez</p>
+          <p class="card-subtitle mb-2">Gerente General</p>
+          <p class="card-text">Con más de una década de experiencia en ventas automotrices, Laura lidera nuestro equipo con pasión y compromiso hacia la excelencia en el servicio al cliente.</p>
+          <p><a href="mailto:laura.ramirez@bestcars.com" class="email-link">laura.ramirez@bestcars.com</a></p>
         </div>
       </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+      <div class="card card-profile" style="width: 300px;">
+        <img class="card-img-top" src="/static/real_person2.jpg" alt="Foto de Andrés Torres">
+        <div class="card-body text-center">
+          <p class="card-title">Andrés Torres</p>
+          <p class="card-subtitle mb-2">Asesor de Ventas</p>
+          <p class="card-text">Andrés es experto en autos importados y siempre está dispuesto a orientarte para tomar la mejor decisión de compra, ajustándose a tus necesidades.</p>
+          <p><a href="mailto:andres.torres@bestcars.com" class="email-link">andres.torres@bestcars.com</a></p>
         </div>
       </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+      <div class="card card-profile" style="width: 300px;">
+        <img class="card-img-top" src="/static/real_person3.jpg" alt="Foto de Sofía Hernández">
+        <div class="card-body text-center">
+          <p class="card-title">Sofía Hernández</p>
+          <p class="card-subtitle mb-2">Especialista en Servicio</p>
+          <p class="card-text">Sofía garantiza que cada cliente reciba atención post-venta de primera y que cada auto entregado cumpla con los más altos estándares de calidad.</p>
+          <p><a href="mailto:sofia.hernandez@bestcars.com" class="email-link">sofia.hernandez@bestcars.com</a></p>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-    
-</div>
-
-</html>
+  </div>
+</body>
+ </html>

@@ -1,3 +1,4 @@
+import Dealers from './components/Dealers/Dealers';
 import LoginPanel from "./components/Login/Login"
 import { Routes, Route } from "react-router-dom";
 import Register from "./components/Register/Register";
@@ -7,6 +8,7 @@ function App() {
     <Routes>
       <Route path="/login" element={<LoginPanel />} />
       <Route path="/register" element={<Register />} /> {/* <-- agrega esta línea */}
+      <Route path="/dealers" element={<Dealers/>} />
     </Routes>
   );
 }

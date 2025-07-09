@@ -22,6 +22,7 @@ Including another URLconf
 """
 
 urlpatterns = [
+    path('dealers/', TemplateView.as_view(template_name="index.html")),
     path('register/', TemplateView.as_view(template_name="index.html")),
     path('login/', TemplateView.as_view(template_name="index.html")),
     path('contact/', TemplateView.as_view(template_name="Contact.html")),
